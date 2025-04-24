@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="MainCanvas">
+            <Button x:Name="NesButton" Content="Так" Width="75" Height="30" Canvas.Left="259" Canvas.Top="197" Click="YesButton_Click"/>
+            <Button x:Name="NoButton" Content="Ні" Width="75" Height="30" Canvas.Left="466" Canvas.Top="197"
+                MouseEnter="EscButton_MouseEnter" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            <Label Content="Ви поставите мені 10 балів?" Height="35" Canvas.Left="246" Canvas.Top="95" Width="308" HorizontalContentAlignment="Center" FontSize="22" FontFamily="Metropolis" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+    </Grid>
+</Window>
